@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package api.v1;
+option go_package = ".;proto_gen";
+
+message Base { string log_id = 1; }
+
+message BaseResp {
+  int32 code = 1;
+  string msg = 2;
+}
